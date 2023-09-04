@@ -19,8 +19,8 @@ https://nft-art-market.netlify.app/
 ``` 
 VITE_API_KEY = "YOUR_MORALIS_API_KEY"
 ```
-- By replacing the *_global* to *global* in vite.config.js file
-- Then run following commands in the terminal - 
+- Replace the *_global* to *global* in vite.config.js file
+- Then run the following commands in the terminal - 
 ```
 npm i
 npm run dev
