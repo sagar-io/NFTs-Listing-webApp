@@ -1,8 +1,28 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# NFTs Listing Web App
+This web app uses Moralis APIs to fetch the data such as NFTs by collection, the floor price, activities and traits.
 
-Currently, two official plugins are available:
+# Technology used - 
+React, 
+CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Bundler
+I've used Vite (instead of create-react-app for enhancing speed and performance) bundler tool.
+
+## Deployed Site Link 
+https://nft-art-market.netlify.app/
+
+
+### Run locally this web app by following instruction -
+
+- create a *.env.local* file in the root folder and put the following text in it and replace the "YOUR_MORALIS_API_KEY" with your api key which you'll get after signup in Moralis platform - 
+``` 
+VITE_API_KEY = "YOUR_MORALIS_API_KEY"
+```
+- By replacing the *_global* to *global* in vite.config.js file
+- Then run following commands in the terminal - 
+```
+npm i
+npm run dev
+```
+
