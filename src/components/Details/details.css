@@ -12,11 +12,8 @@
     color: rgb(180, 15, 185);
     color: white;
     background: -webkit-linear-gradient(rgb(81, 22, 81), white, purple);
-    /* -webkit-background-clip: text; */
     background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
-    /* -webkit-text-fill-color: transparent; */
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
 .col-1 {
@@ -168,4 +165,82 @@ abbr {
 
 .nft-details {
     margin-top: 5rem;
+}
+
+
+@media (max-width: 800px) {
+    .nft-details {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .nft-details .col-1 {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .col-1 img {
+        max-width: 200px;
+    }
+
+    .nft-details .col-2 {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nft-details {
+        padding: 1rem 2rem;
+    }
+
+    .nft-details .col-1 {
+        padding: 0;
+    }
+
+    .col-1 img {
+        max-width: 200px;
+    }
+
+    .basic-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .listing img {
+        width: 1rem;
+    }
+
+    .listing {
+        display: flex;
+        font-size: 0.8rem;
+    }
+
+    td {
+        font-size: 0.6rem;
+    }
+
+    th {
+        font-size: 0.8rem;
+    }
+
+    .nft-name {
+        font-size: 1.5rem;
+        padding: 2px 8px;
+    }
+
+    .activity-wrapper {
+        padding: 0.4rem 0rem;
+    }
+
+    .activities {
+        max-height: 400px;
+    }
+
+    .description {
+        max-height: 500px;
+    }
 }

@@ -11,6 +11,7 @@ function App() {
       <nav className="navbar">
       <h1 className="m-heading">NFTs MarketPlace</h1>
       </nav>
+      
       <ApiContext.Provider value={new ApiFetch()}>
         <Routes>
           <Route path="/" element={<NFTs />} />
