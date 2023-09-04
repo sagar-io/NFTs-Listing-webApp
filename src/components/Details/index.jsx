@@ -12,8 +12,6 @@ const Details = () => {
   const [floorPrice, setFloorPrice] = useState("-");
   const [activities, setActivities] = useState([]);
 
-  console.log(data)
-
   useEffect(() => {
     const getData = async () => {
       const res = await fetchApi.getOwner(address, id);
